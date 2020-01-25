@@ -7,6 +7,7 @@ class UserFeedBack(models.Model):
     description = models.TextField()
     reply = models.TextField()
     replied = models.BooleanField(default=False)
+    empty = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
 class Url(models.Model):
@@ -22,5 +23,6 @@ class Url(models.Model):
     emails = models.CharField(max_length=100,null=True,default="Not Found")    
     rank = models.IntegerField(null=True,default=0,blank=True)
     #rank = models.CharField(max_length=100,null=True,default="N A",blank=True)
+    empty = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
