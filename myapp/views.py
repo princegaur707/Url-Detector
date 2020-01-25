@@ -546,9 +546,10 @@ def search(request):
 
 def replyform(request,replyid):
     try:
-        obj = UserFeedBack.objects.get(userid=replyid)
+        obj = UserFeedBack.objects.get(id=replyid)
+        print(obj)
         mydict = {
-        "replyid" : obj.userid,
+        "replyid" : obj.id,
         "title" : obj.title,
         "description" : obj.description
         }
@@ -561,7 +562,7 @@ def savereply(request):
         print("debug start")
         replyid = request.GET['replyid']
         print(replyid)
-        obj = UserFeedBack.objects.get(userid=replyid)
+        obj = UserFeedBack.objects.get(id=replyid)
         obj.replied = True
         obj.reply = request.GET['userreply']
         obj.save()
