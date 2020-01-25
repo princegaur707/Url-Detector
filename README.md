@@ -1,2 +1,16 @@
-# Malicious-Urlv5
-Malicious-Urlv5
+Detects whether URL is legitimate or malicious on the basis of features such as
+having_IPhaving_IP_Address',
+'URLURL_Length',
+'having_At_Symbol',
+'Double_slash_redirecting',
+'Prefix_Suffix',
+'HTTPS_token',
+'SFH',
+'Submitting_to_email',
+'Redirect',
+'Age_of_domain',
+'Abnormal_URL',
+'web_traffic'
+'Alexa Ranking'
+'Whois Database'(Address,Organisation,City,State,Country,Domain,Emails,Alexa Rank,Date)
+Random forest is used for model training
