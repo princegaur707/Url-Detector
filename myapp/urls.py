@@ -14,6 +14,6 @@ urlpatterns = [
     path('reply/<int:replyid>',views.replyform,name="reply"),
     path('savereply',views.savereply,name="reply"),
     path('searchdiscuss',views.searchdiscuss,name="searchdiscuss"),
-
+    path('recommend',views.recommend,name="recommend")
 ]
 

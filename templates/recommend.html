@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% block title %}Recommend{% endblock %}
+{% block content %}
+
+<div class="container-fluid" style="margin-top: 1rem;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container">
+                <h2>Recommendation</h2>
+                <div id="accordion">
+                    {% for url in urls %}
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        {{url.link}}
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">{{url.state}}</li>
+                            <li class="list-group-item">{{url.city}}</li>
+                            <li class="list-group-item">{{url.add}}</li>
+                            <li class="list-group-item">{{url.org}}</li>
+                            <li class="list-group-item">{{url.country}}</li>
+                            <li class="list-group-item">{{url.dom}}</li>
+                            <li class="list-group-item">{{url.emails}}</li>
+                            <li class="list-group-item">{{url.rank}}</li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                  </div>
+                  </div>
+                  </div>
+    </div>
+</div>
+{% endblock %}
