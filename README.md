@@ -9,8 +9,8 @@ SFH,
 Submitting_to_email,
 Redirect:Redirecting is most common fraud tool to fool user and redirect it to some false place,
 Age_of_domain: domains registered from more than 6 months are taken as more reliable,
-'Abnormal_URL',
-'web_traffic'
-'Alexa Ranking: better the ranking more it is secure '
-'Whois Database'(Address,Organisation,City,State,Country,Domain,Emails,Alexa Rank,Date)
+Abnormal_URL,
+web_traffic,
+Alexa Ranking: better the ranking more it is secure,
+Whois Database'(Address,Organisation,City,State,Country,Domain,Emails,Alexa Rank,Date),
 Random forest for model training
