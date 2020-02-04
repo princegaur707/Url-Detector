@@ -11,7 +11,7 @@ Prefix_Suffix:,
 Age_of_domain: domains registered from more than 6 months are taken as more reliable,
 'Abnormal_URL',
 'web_traffic'
-'Alexa Ranking: '
+'Alexa Ranking: better the ranking more it is secure '
 'Whois Database'(Address,Organisation,City,State,Country,Domain,Emails,Alexa Rank,Date)
 Random forest is used for model training
 
