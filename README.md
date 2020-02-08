@@ -3,7 +3,7 @@ having_IPhaving_IP_Address:If IP add. have been used in place domain it is surel
 URL_Length : Url's of length greater than thereshold have been considered as malicious,
 having_At_Symbol,
 Double_slash_redirecting:double slashes are most common tool for redirecting,
-Prefix_Suffix:
+Prefix_Suffix:,
 HTTPS_token,
 SFH,
 Submitting_to_email,
