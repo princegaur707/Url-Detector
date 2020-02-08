@@ -13,4 +13,4 @@ Abnormal_URL,
 web_traffic,
 Alexa Ranking: better the ranking more it is secure,
 Whois Database'(Address,Organisation,City,State,Country,Domain,Emails,Alexa Rank,Date),
-Random forest for model training
+Random forest used for model tranining
