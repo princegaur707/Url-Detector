@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block title %}Page Not Found{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6" style="margin: 0 auto 5rem auto;text-align:center">
+            <h1 style="margin-top: 1rem;">Sign Up Form </h1>
+            <form method="POST" autocomplete="off" action="{% url 'account_signup' %}">
+            {% csrf_token %}
+            {% for ele in form %}
+                <div class="form-group">
+                    {{ele}}
+                </div>
+            {% endfor %}
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
