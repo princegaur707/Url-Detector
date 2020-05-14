@@ -42,13 +42,21 @@
                                     <li class="list-group-item">Email: {{emails}}</li>
                                     <li class="list-group-item">Dom: {{dom}}</li>
                                     <li class="list-group-item">Alexa Index Rank: {{rank}}</li>
-                                  </ul>
+                                </ul>
                             </div>
 
                         </div>
                         <!-- Card -->
                     </div>
                 </div>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.js"></script>
+                <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+                <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+                <script>
+                    console.log("Scrip Started");
+                    Swal.fire('This url looks safe')
+                </script>
                 {% else %}
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <strong>Malicious Url</strong>
@@ -85,17 +93,30 @@
                                         <li class="list-group-item">Email: {{emails}}</li>
                                         <li class="list-group-item">Dom: {{dom}}</li>
                                         <li class="list-group-item">Alexa Index Rank: {{rank}}</li>
-                                      </ul>
+                                    </ul>
                                 </div>
 
                             </div>
                             <!-- Card -->
                         </div>
                     </div>
+                    <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.js"></script>
+                    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+                    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+                    <script>
+                        console.log("Scrip Started");
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong!'
+                        })
+                    </script>
                     {% endif %}
                     <div class="row" style="margin-bottom:10rem;">
                         <div class="col md-6" style="margin:0 auto;">
-                            <a type="button" class="btn btn-success" href="/recommend?query={{url.link}}" style="display: block;margin: 0 auto;">Get Recommendations</a>
+                            <a type="button" class="btn btn-success" href="/recommend?query={{url.link}}"
+                                style="display: block;margin: 0 auto;">Get Recommendations</a>
                         </div>
                     </div>
                 </div>
