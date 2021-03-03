@@ -1,11 +1,11 @@
-Detects whether URL is legitimate or malicious on the basis of features such as:-
+Detects whether URL is legitimate or malicious on the basis of features such as:-  
 having_IPhaving_IP_Address:If IP add. have been used in place domain it is surely malicious,
 URL_Length : Url's of length greater than certain thereshold have been considered as malicious,
 having_At_Symbol,
 Double_slash_redirecting:double slashes are most common tool for redirecting,
 Prefix_Suffix,
 HTTPS_token,
-SFH,
+SFH,  
 Submitting_to_email,
 Redirect:Redirecting is most common fraud tool to fool user and redirect it to some false place,
 Age_of_domain: domains registered from more than 6 months are taken as more reliable,
